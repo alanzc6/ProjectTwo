@@ -1,0 +1,215 @@
+
+body{
+
+    font-family: 'Shantell Sans';
+
+    background: rgb(250, 233, 241);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, #94bbe9 100%);
+    padding: 120;
+    margin: 120;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    
+    
+    h1{
+        font-size: 75px;
+    
+    transition-property: transform, color;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    transition-delay: 5s;
+    transform-origin: center;
+    color: whitesmoke;
+    font-family: 'shantell Sans';
+
+    }
+
+    .page2{
+        color: rgb(104, 19, 195);
+        transition-property: opacity,width;
+        transition-timing-function: ease;
+        transition-delay: 0;
+        transform: scale(5);
+        font-family: 'Shantell Sans', cursive;
+        text-decoration: none;
+        
+
+    }
+
+    .fade-in-text {
+        font-family: 'Shantell Sans', cursive;
+        font-size: 150px;
+        animation: fadeIn 5s;
+      }
+
+    h2{
+        font-size: 70px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 50%;
+        transition: width 2s;
+        color: whitesmoke;
+        font-family: 'shantell Sans';
+    }
+
+   
+
+    /* Page 2 */
+
+    .slide-right {
+        width: 100%;
+        overflow: hidden;
+        margin-left: 300px;
+      }
+      
+      .slide-right h3 {
+        animation: 2s slide-right 2s forwards;
+          transform:translateX(-100%);
+      }
+
+      
+    h3{
+
+        font-size: 75px;
+    
+    transition-property: transform, color;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    transition-delay: 5s;
+    transform-origin: center;
+    color: whitesmoke;
+    font-family: 'shantell Sans';
+
+   
+
+    }
+    .glow  {
+        color: #ef73f1;
+        text-align: center;
+        animation: glow 1s ease-in-out infinite alternate;
+    }
+    .page3{
+        color: rgb(104, 19, 195);
+        transition-property: all;
+        transition-duration: 10s;
+        transition-timing-function: ease;
+        transition-delay: 0ms;
+        transform: scale(5);
+        font-family: 'Shantell Sans', cursive;
+        text-decoration: none;
+        
+        
+
+    }
+
+           /* Page 3 */
+ 
+
+
+           
+    
+           h4{
+
+            font-size: 75px;
+        
+        transition-property: transform, color;
+        transition-duration: 0.5s;
+        transition-timing-function: ease;
+        transition-delay: 5s;
+        transform-origin: center;
+        color: whitesmoke;
+        font-family: 'shantell Sans';
+        }
+        .glow2  {
+            color: #ef73f1;
+            text-align: center;
+            animation: glow 1s ease-in-out infinite alternate;
+        }
+
+        .shadow-dance {
+            font-size: 4rem;
+            color: #fff;
+            text-shadow: 5px 5px 0 #ef73f1, 10px 10px 0 #005c6e;
+            animation: shadow-dance 2s infinite;
+        }
+        .page4{
+            color: rgb(104, 19, 195);
+            transition-property: all;
+            transition-duration: 10s;
+            transition-timing-function: ease;
+            transition-delay: 0ms;
+            transform: scale(5);
+            font-family: 'Shantell Sans', cursive;
+            text-decoration: none;
+    
+        }
+
+
+
+}
+
+   /* Page 4 */
+
+   h5{
+
+    font-size: 75px;
+
+transition-property: transform, color;
+transition-duration: 0.5s;
+transition-timing-function: ease;
+transition-delay: 5s;
+transform-origin: center;
+color: whitesmoke;
+font-family: 'shantell Sans';
+}
+
+.page5{
+    color: rgb(104, 19, 195);
+    transition-property: all;
+    transition-duration: 10s;
+    transition-timing-function: ease;
+    transition-delay: 0ms;
+    transform: scale(5);
+    font-family: 'Shantell Sans', cursive;
+    text-decoration: none;
+    
+
+
+}
+
+
+   /* Keyframes */
+
+   @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @keyframes slide-right {
+    to {
+      transform:translateX(0);
+    }
+  }
+
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  }
+
+  @keyframes shadow-dance {
+    0%, 100% {
+        text-shadow: 5px 5px 0 #ef73f1, 10px 10px 0 #005c6e;
+    }
+    50% {
+        text-shadow: -5px -5px 0 #ef73f1, 10px 10px 0 #1990a8;
+    }
+
+}
