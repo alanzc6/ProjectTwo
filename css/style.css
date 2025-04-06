@@ -55,7 +55,29 @@ body{
         font-family: 'shantell Sans';
     }
 
-   
+    .wave-text span {
+      display: inline-block;
+      font-size: 4rem;
+      animation: wave 2s ease-in-out infinite;
+  }
+  
+  .wave-text span:nth-child(1) {
+      animation-delay: 0s;
+  }
+  .wave-text span:nth-child(2) {
+      animation-delay: 0.2s;
+  }
+  .wave-text span:nth-child(3) {
+      animation-delay: 0.4s;
+  }
+  .wave-text span:nth-child(4) {
+      animation-delay: 0.6s;
+  }
+  
+  
+  
+  
+
 
     /* Page 2 */
 
@@ -66,7 +88,7 @@ body{
       }
       
       .slide-right h3 {
-        animation: 2s slide-right 2s forwards;
+        animation: 1s slide-right 1s forwards;
           transform:translateX(-100%);
       }
 
@@ -90,6 +112,8 @@ body{
         color: #ef73f1;
         text-align: center;
         animation: glow 1s ease-in-out infinite alternate;
+        display: inline-block;
+
     }
     .page3{
         color: rgb(104, 19, 195);
@@ -102,8 +126,14 @@ body{
         text-decoration: none;
         
         
-
     }
+
+
+    
+
+
+
+
 
            /* Page 3 */
  
@@ -135,6 +165,18 @@ body{
             text-shadow: 5px 5px 0 #ef73f1, 10px 10px 0 #005c6e;
             animation: shadow-dance 2s infinite;
         }
+
+
+        #spinner {
+          animation-name: spinner;
+          display: inline-block;
+          animation-timing-function: linear;
+          animation-iteration-count:infinite;
+          animation-duration: 5s;
+          transform-style: preserve-3d;
+        }
+
+
         .page4{
             color: rgb(104, 19, 195);
             transition-property: all;
@@ -180,6 +222,19 @@ font-family: 'shantell Sans';
 
 }
 
+#spinner2 {
+  color: #ef73f1;
+  animation-name: spinner;
+  display: inline-block;
+  animation-timing-function: linear;
+  animation-iteration-count:infinite;
+  animation-duration: 5s;
+  transform-style: preserve-3d;
+}
+
+
+
+
 
    /* Keyframes */
 
@@ -212,4 +267,32 @@ font-family: 'shantell Sans';
         text-shadow: -5px -5px 0 #ef73f1, 10px 10px 0 #1990a8;
     }
 
+}
+
+
+@keyframes spinner {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(-360deg);
+  }
+}
+@keyframes spinner2 {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(-360deg);
+  }
+}
+
+
+@keyframes wave {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-20px);
+  }
 }
